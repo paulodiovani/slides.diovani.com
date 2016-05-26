@@ -1,0 +1,38 @@
+.reveal .half-slide> * {
+  width: 50%;
+}
+
+.reveal img.no-border,
+.reveal a.no-border img {
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.reveal img.no-background,
+.reveal a.no-background img {
+  background: none !important;
+}
+
+.reveal img.img-half-right {
+  float: right;
+  width: 30%;
+  height: auto;
+}
+
+.reveal ul ul {
+  font-size: .9em;
+}
+
+/*
+fix code overflow
+and increase font size
+*/
+
+.reveal pre {
+  width: auto;
+  font-size: .75em;
+}
+
+.reveal pre code {
+  max-height: none;
+}
