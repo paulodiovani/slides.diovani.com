@@ -1,13 +1,17 @@
+del            = require('del')
 gulp           = require('gulp')
 deploy         = require('gulp-deploy-git')
 connect        = require('gulp-connect')
 mainBowerFiles = require('main-bower-files')
 
-gulp.task 'populate-slides', ->
+gulp.task 'clean', ->
+  del(['./dist/**/*'])
+
+gulp.task 'populate-slides', ['clean'], ->
   gulp.src mainBowerFiles(), base: './bower_components'
     .pipe gulp.dest('./dist')
 
-gulp.task 'copy-dependencies', ->
+gulp.task 'copy-dependencies', ['clean'], ->
   gulp.src 'bower_components/{font-awesome,headjs,reveal.js}/**/*.{css,js}', base: './'
     .pipe gulp.dest('./dist')
   gulp.src 'bower_components/font-awesome/fonts/**/*', base: './'
@@ -15,7 +19,7 @@ gulp.task 'copy-dependencies', ->
   gulp.src 'bower_components/reveal.js/lib/font/**/*', base: './'
     .pipe gulp.dest('./dist')
 
-gulp.task 'build', ['populate-slides', 'copy-dependencies']
+gulp.task 'build', ['clean', 'populate-slides', 'copy-dependencies']
 
 gulp.task 'serve', ->
   connect.server(root: ['./dist'])
