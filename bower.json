@@ -25,5 +25,9 @@
   "dependencies": {
     "reveal.js": "^3.3.0",
     "font-awesome": "^4.6.3"
+  },
+  "overrides": {
+    "reveal.js": { "ignore": true },
+    "font-awesome": { "ignore": true }
   }
 }
