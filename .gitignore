@@ -34,4 +34,4 @@ bower_components
 .node_repl_history
 
 # Build output
-slides
+dist
