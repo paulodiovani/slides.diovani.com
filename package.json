@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "start": "gulp",
+    "deploy": "gulp deploy",
     "postinstall": "bower install"
   },
   "repository": {
