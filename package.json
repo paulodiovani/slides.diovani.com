@@ -1,0 +1,18 @@
+{
+  "name": "slides.diovani.com",
+  "version": "0.1.0",
+  "description": "Website for all the talks I've made. http://slides.diovani.com",
+  "private": true,
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulodiovani/slides.diovani.com.git"
+  },
+  "author": "Paulo Diovani <paulo@diovani.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulodiovani/slides.diovani.com/issues"
+  },
+  "homepage": "https://github.com/paulodiovani/slides.diovani.com#readme"
+}
