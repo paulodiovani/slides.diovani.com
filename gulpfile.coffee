@@ -14,9 +14,12 @@ gulp.task 'populate-slides', ['clean'], ->
 
 gulp.task 'copy-dependencies', ['clean'], ->
   gulp.src [
+    'bower_components/bootstrap/dist/**/*.{css,js}'
+    'bower_components/bootstrap/dist/fonts/**/*'
     'bower_components/font-awesome/**/*.{css,js}'
     'bower_components/font-awesome/fonts/**/*'
     'bower_components/headjs/**/*.js'
+    'bower_components/jquery/dist/**/*.js'
     'bower_components/reveal.js/**/*.{css,js}'
     'bower_components/reveal.js/lib/font/**/*'
   ], base: './'

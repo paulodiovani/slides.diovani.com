@@ -25,7 +25,9 @@
   "dependencies": {
     "reveal.js": "^3.3.0",
     "font-awesome": "^4.6.3",
-    "slides-walking-on-rails": "git://github.com/paulodiovani/slides-walking-on-rails"
+    "slides-walking-on-rails": "git://github.com/paulodiovani/slides-walking-on-rails",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.4"
   },
   "group": {
     "slides": [
