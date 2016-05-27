@@ -1,0 +1,66 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+body > .container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/*
+ * Other customization
+ */
+.thumbnail {
+  background-color: #222;
+  border-color: #101010;
+}
+
+.thumbnail a {
+  text-decoration: none;
+}
+
+.thumbnail .caption {
+  color: #9d9d9d;
+}
+
+.thumbnail a:hover .caption {
+  color: #fff;
+}
+
+.well {
+  background-color: #303030;
+  border-color: #252525;
+}
