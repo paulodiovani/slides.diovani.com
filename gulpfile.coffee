@@ -1,5 +1,7 @@
 del            = require('del')
+ejs            = require("gulp-ejs")
 gulp           = require('gulp')
+bower          = require('bower')
 deploy         = require('gulp-deploy-git')
 replace        = require('gulp-replace')
 connect        = require('gulp-connect')
@@ -11,6 +13,16 @@ gulp.task 'clean', ->
 gulp.task 'populate-slides', ['clean'], ->
   gulp.src mainBowerFiles(group: 'slides'), base: './bower_components'
     .pipe gulp.dest('./dist')
+
+gulp.task 'copy-index-files', ['clean'], ->
+  gulp.src 'home/**/*.{css,js}', base: './home'
+    .pipe gulp.dest('./dist')
+
+gulp.task 'update-index', ['clean'], ->
+  bower.commands.list().on 'end', (pkg) ->
+    gulp.src 'home/index.ejs'
+      .pipe ejs(pkg, ext: '.html')
+      .pipe gulp.dest('./dist')
 
 gulp.task 'copy-dependencies', ['clean'], ->
   gulp.src [
@@ -36,6 +48,8 @@ gulp.task 'replace-bower', ['populate-slides'], ->
 gulp.task 'build', [
   'clean'
   'populate-slides'
+  'copy-index-files'
+  'update-index'
   'copy-dependencies'
   'replace-bower'
 ]

@@ -47,14 +47,18 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <a href="../dist/slides-walking-on-rails/index.html">
-              <img src="../dist/slides-walking-on-rails/cover.jpg" alt="walking-on-rails">
-              <div class="caption">A talk about the Ruby on Rails ecossystem.</div>
-            </a>
-          </div>
-        </div>
+        <% for (name in dependencies) { %>
+          <% if (/^slides\-/.test(name)) { %>
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <a href="./<%= name %>/index.html">
+                  <img src="./<%= name %>/cover.jpg" alt="<%= name %>">
+                  <div class="caption"><%= dependencies[name].pkgMeta.description %></div>
+                </a>
+              </div>
+            </div>
+          <% } %>
+        <% } %>
       </div>
 
       <div class="row">
