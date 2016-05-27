@@ -9,7 +9,7 @@ gulp.task 'clean', ->
   del(['./dist/**/*'])
 
 gulp.task 'populate-slides', ['clean'], ->
-  gulp.src mainBowerFiles(), base: './bower_components'
+  gulp.src mainBowerFiles(group: 'slides'), base: './bower_components'
     .pipe gulp.dest('./dist')
 
 gulp.task 'copy-dependencies', ['clean'], ->

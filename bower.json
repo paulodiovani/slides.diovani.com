@@ -27,6 +27,11 @@
     "font-awesome": "^4.6.3",
     "slides-walking-on-rails": "git://github.com/paulodiovani/slides-walking-on-rails"
   },
+  "group": {
+    "slides": [
+      "slides-walking-on-rails"
+    ]
+  },
   "overrides": {
     "reveal.js": {
       "ignore": true
