@@ -15,7 +15,7 @@ gulp.task 'populate-slides', ['clean'], ->
     .pipe gulp.dest('./dist')
 
 gulp.task 'copy-index-files', ['clean'], ->
-  gulp.src 'home/**/*.{css,js}', base: './home'
+  gulp.src ['home/CNAME', 'home/**/*.{css,js}'], base: './home'
     .pipe gulp.dest('./dist')
 
 gulp.task 'update-index', ['clean'], (cb) ->
