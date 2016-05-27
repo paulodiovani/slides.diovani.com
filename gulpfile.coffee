@@ -18,11 +18,14 @@ gulp.task 'copy-index-files', ['clean'], ->
   gulp.src 'home/**/*.{css,js}', base: './home'
     .pipe gulp.dest('./dist')
 
-gulp.task 'update-index', ['clean'], ->
+gulp.task 'update-index', ['clean'], (cb) ->
   bower.commands.list().on 'end', (pkg) ->
     gulp.src 'home/index.ejs'
       .pipe ejs(pkg, ext: '.html')
       .pipe gulp.dest('./dist')
+      .on 'end', cb
+    return
+  return
 
 gulp.task 'copy-dependencies', ['clean'], ->
   gulp.src [
