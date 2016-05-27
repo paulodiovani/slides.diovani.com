@@ -12,11 +12,13 @@ gulp.task 'populate-slides', ['clean'], ->
     .pipe gulp.dest('./dist')
 
 gulp.task 'copy-dependencies', ['clean'], ->
-  gulp.src 'bower_components/{font-awesome,headjs,reveal.js}/**/*.{css,js}', base: './'
-    .pipe gulp.dest('./dist')
-  gulp.src 'bower_components/font-awesome/fonts/**/*', base: './'
-    .pipe gulp.dest('./dist')
-  gulp.src 'bower_components/reveal.js/lib/font/**/*', base: './'
+  gulp.src [
+    'bower_components/font-awesome/**/*.{css,js}'
+    'bower_components/font-awesome/fonts/**/*'
+    'bower_components/headjs/**/*.js'
+    'bower_components/reveal.js/**/*.{css,js}'
+    'bower_components/reveal.js/lib/font/**/*'
+  ], base: './'
     .pipe gulp.dest('./dist')
 
 gulp.task 'build', ['clean', 'populate-slides', 'copy-dependencies']
