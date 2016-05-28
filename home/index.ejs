@@ -47,18 +47,16 @@
     <div class="container">
 
       <div class="row">
-        <% for (name in dependencies) { %>
-          <% if (/^slides\-/.test(name)) { %>
-            <div class="col-sm-6 col-md-3">
-              <div class="thumbnail">
-                <a href="./<%= name %>/index.html">
-                  <img src="./<%= name %>/cover.jpg" alt="<%= name %>">
-                  <div class="caption"><%= dependencies[name].pkgMeta.description %></div>
-                </a>
-              </div>
+        <% pkgMeta.group.slides.forEach(function(name) { %>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <a href="./<%= name %>/index.html">
+                <img src="./<%= name %>/cover.jpg" alt="<%= name %>">
+                <div class="caption"><%= dependencies[name].pkgMeta.description %></div>
+              </a>
             </div>
-          <% } %>
-        <% } %>
+          </div>
+        <% }); %>
       </div>
 
       <div class="row">
