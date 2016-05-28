@@ -28,12 +28,14 @@
     "bootstrap": "^3.3.6",
     "jquery": "^2.2.4",
     "slides-vagrant-lxc-docker": "https://github.com/paulodiovani/slides-vagrant-lxc-docker.git",
-    "slides-walking-on-rails": "https://github.com/paulodiovani/slides-walking-on-rails.git"
+    "slides-walking-on-rails": "https://github.com/paulodiovani/slides-walking-on-rails.git",
+    "slides-nodejs-server-side-javascript": "https://github.com/paulodiovani/slides-nodejs-server-side-javascript.git"
   },
   "group": {
     "slides": [
       "slides-walking-on-rails",
-      "slides-vagrant-lxc-docker"
+      "slides-vagrant-lxc-docker",
+      "slides-nodejs-server-side-javascript"
     ]
   },
   "overrides": {
