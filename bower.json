@@ -29,13 +29,15 @@
     "jquery": "^2.2.4",
     "slides-vagrant-lxc-docker": "https://github.com/paulodiovani/slides-vagrant-lxc-docker.git",
     "slides-walking-on-rails": "https://github.com/paulodiovani/slides-walking-on-rails.git",
-    "slides-nodejs-server-side-javascript": "https://github.com/paulodiovani/slides-nodejs-server-side-javascript.git"
+    "slides-nodejs-server-side-javascript": "https://github.com/paulodiovani/slides-nodejs-server-side-javascript.git",
+    "slides-coffeescript": "https://github.com/paulodiovani/slides-coffeescript.git"
   },
   "group": {
     "slides": [
       "slides-walking-on-rails",
       "slides-vagrant-lxc-docker",
-      "slides-nodejs-server-side-javascript"
+      "slides-nodejs-server-side-javascript",
+      "slides-coffeescript"
     ]
   },
   "overrides": {
