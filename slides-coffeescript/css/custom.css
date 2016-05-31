@@ -1,0 +1,56 @@
+/* reset font-awesome */
+.fa {
+  font: normal normal normal 14px/1 FontAwesome !important;
+  font-size: inherit !important;
+}
+
+img.no-border {
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+img.no-background {
+  background: transparent !important;
+}
+
+.compile h6 {
+  color: #aeaeae;
+  font-size: 0.6em;
+  margin: 2em 2em 0 0;
+}
+
+.compile pre {
+  width: 50%;
+  float: left;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+.compile pre:nth-child(even) {
+  padding-right: 1em;
+}
+
+.compile pre:nth-child(odd) {
+  padding-right: 1em;
+}
+
+.author ul li {
+  list-style: none;
+  font-size: 0.8em;
+  padding-bottom: 0.4em;
+}
+
+table {
+  width: 100%
+}
+
+/* fix code overflow */
+
+.reveal pre {
+  white-space: pre-wrap;
+}
+
+.reveal pre code {
+  max-height: none;
+  overflow: hidden;
+}
