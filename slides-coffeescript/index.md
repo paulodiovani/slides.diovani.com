@@ -3,7 +3,7 @@
 
 _tome um gole de café_
 
-<small>Versão 0.2.3</small>
+<small>Versão 0.2.4</small>
 
 ====
 <!-- .slide: class="author" -->
@@ -23,7 +23,7 @@ _tome um gole de café_
 
 Acesse os slides em
 
-[slides.diovani.com/slides/coffeescript](http://slides.diovani.com/slides/coffeescript/)
+[slides.diovani.com/slides-coffeescript](http://slides.diovani.com/slides-coffeescript/)
 
 <small>[<i class="fa fa-github"></i> contribua](https://github.com/paulodiovani/reveal.js-slides)</small>
 
