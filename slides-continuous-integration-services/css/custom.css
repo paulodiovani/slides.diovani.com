@@ -1,0 +1,36 @@
+li > ul {
+  font-size: .9em !important;
+}
+
+.credits {
+  font-size: .4em !important;
+  font-style: italic !important;
+}
+
+.credits::before {
+  content: "Image credits:";
+  font-size: .8em !important;
+  text-transform: uppercase;
+  padding-right: .4em;
+}
+
+.list-descriptions li > p:not(:first-child) {
+  font-size: .8em;
+}
+
+.bibliography ul {
+  margin: 0;
+}
+
+.bibliography ul li {
+  list-style: none;
+  font-size: .7em;
+}
+
+.bibliography ul li code {
+  font-family: inherit;
+}
+
+img.big {
+  width: 100%;
+}

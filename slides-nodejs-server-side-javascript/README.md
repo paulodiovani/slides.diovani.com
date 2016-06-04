@@ -1,5 +1,5 @@
 # Server-side Javascript with Node.js
 
-A talk for Node.js beginners, with a plataform overview, cases and examples.
+Node.js for beginners. Plataform overview, cases and examples.
 
 ![cover](cover.jpg)

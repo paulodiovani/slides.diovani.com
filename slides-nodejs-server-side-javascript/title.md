@@ -4,4 +4,4 @@ Javascript no servidor com
 
 [nodejs.org](http://nodejs.org)
 
-<small>Versão 0.2.0</small>
+<small>Versão 0.2.2</small>
