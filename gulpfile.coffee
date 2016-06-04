@@ -57,7 +57,7 @@ gulp.task 'build', [
   'replace-bower'
 ]
 
-gulp.task 'serve', ->
+gulp.task 'serve', ['build'], ->
   connect.server(root: ['./dist'])
 
 gulp.task 'deploy', ['build'], ->
