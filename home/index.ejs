@@ -51,7 +51,13 @@
     <div class="container">
 
       <div class="row">
-        <% pkgMeta.group.slides.forEach(function(name) { %>
+        <% pkgMeta.group.slides.forEach(function(name, i) { %>
+
+    <% if (i != 0 && i % 4 == 0) { %>
+      </div>
+      <div class="row">
+    <% } %>
+
           <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
               <a href="./<%= name %>/index.html">
