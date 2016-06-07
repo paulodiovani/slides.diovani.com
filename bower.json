@@ -37,9 +37,9 @@
     "slides": [
       "slides-walking-on-rails",
       "slides-vagrant-lxc-docker",
+      "slides-continuous-integration-services",
       "slides-nodejs-server-side-javascript",
-      "slides-coffeescript",
-      "slides-continuous-integration-services"
+      "slides-coffeescript"
     ]
   },
   "overrides": {
