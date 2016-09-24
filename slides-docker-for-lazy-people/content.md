@@ -6,12 +6,44 @@ https://www.flickr.com/photos/37060680@N04/4441496167 <!-- .element: class="cred
 Or how to use Docker to leverage dependency management and
 reduce hard work
 
-<small>Version 0.1.3</small>
+<small>Version 0.2.1</small>
 
 Note:
 We have cool whales for all over the talk. 🐋
 
 ====
+
+`update 0.2.0` - Now with GIFs!
+
+![rainbow](img/whale-rainbow.gif)
+http://stefanieshank.tumblr.com/post/145720185704/orca-blog-insta <!-- .element: class="credits" -->
+
+====
+
+<!-- .slide: class="half-slide" data-background="url(img/paulodiovani.jpg)" data-background-size="contain" data-background-repeat="no-repeat" data-background-position="right" -->
+
+### <i class="fa fa-user"></i> Paulo Diovani Gonçalves
+
+Technologist in Internet Systems by Feevale University.
+Software Enginer at Codeminer 42.
+GNU/Linux user since 2005.
+
+[blog.diovani.com][blog]
+
+[slides.diovani.com][slides]
+
+[@paulodiovani][twitter]
+
+[![codeminer42][code-logo]][code-site] <!-- .element: class="no-border no-background" -->
+
+[avatar]: img/avatar.jpg
+[blog]: http://blog.diovani.com
+[slides]: http://slides.diovani.com
+[twitter]: http://twitter.com/paulodiovani
+[code-logo]: img/codeminer42.png
+[code-site]: http://codeminer42.com/
+
+----
 
 About being lazy...
 
@@ -35,28 +67,28 @@ Image: Roy Batty, from Blade Runner movie (1982)
 
 ====
 
-<!-- .slide: class="half-slide" data-background="url(img/paulodiovani.jpg)" data-background-size="contain" data-background-repeat="no-repeat" data-background-position="right" -->
+**This is NOT a talk about _bots_ 🤖.** <!-- .element: class="big" -->
 
-### <i class="fa fa-user"></i> Paulo Diovani Gonçalves
+<span>For that, ask [@hannelita][htt]</span> <!-- .element: class="small" -->
+![hannelita][hta]
 
-Technologist in Systems for Internet by Feevale University.
-Software Enginer at Codeminer 42.
-GNU/Linux user since 2005.
+[htt]: https://twitter.com/hannelita/
+[hta]: img/hannelita.png
 
-[blog.diovani.com][blog]
+Note:
+I'm not speaking about bots, but in automating
+frequent or worksome tasks.
 
-[slides.diovani.com][slides]
+====
 
-[@paulodiovani][twitter]
+### Automation in Ruby ecosystem
 
-[![codeminer42][code-logo]][code-site] <!-- .element: class="no-border no-background" -->
+- rspec tests
+- migrations
+- rake tasks
 
-[avatar]: img/avatar.jpg
-[blog]: http://blog.diovani.com
-[slides]: http://slides.diovani.com
-[twitter]: http://twitter.com/paulodiovani
-[code-logo]: img/codeminer42.png
-[code-site]: http://codeminer42.com/
+Note:
+We are used to have automated tasks in ruby, already.
 
 ----
 
@@ -68,37 +100,7 @@ Note:
 We have been having a lot of Docker talks recently.
 Most of then a lot complicated.
 
-====
-
-```bash
-# running a container on interactive tty
-$ docker run -i -t image_name [command]
-
-# forwarding ports
-$ docker run -p 9999:9999 image_name
-
-# mounting volumes
-$ docker run -v /host/path:/guest/path image_name
-
-# running on background
-$ docker run -d image_name
-
-# removing after use
-$ docker run --rm -it image_name [command]
-```
-
-```bash
-# hosting static content with NGINX
-$ docker run --name some-nginx \
-        -v /some/content:/usr/share/nginx/html:ro \
-        -p 8080:80 \
-        -d nginx
-```
-
-Note:
 ...Giving us a lot of sample commands hard to remember.
-
-> Look at that huge command...
 
 ====
 
@@ -135,39 +137,17 @@ And we have so much more
 
 ====
 
-> # So much information,
-> # I can't follow you!
+> Too complex to me
+
+![docker-fails](img/docker-fails.jpg)
+https://infoslack.com/rubyconf2015/docker/#/13 <!-- .element: class="credits" -->
 
 Note:
 The gotcha is that, even with the full, amazing,
 capabilities of Docker, one cannot handle all
 the information and deal with advantages at once.
 
-...And a lot speakers want to tell you all of it. :(
-
-====
-
-![docker-fails](img/docker-fails.jpg)
-https://infoslack.com/rubyconf2015/docker/#/13 <!-- .element: class="credits" -->
-
-Note:
 In the end, people just walk away from Docker. :'(
-
-----
-
-## Being practical
-
-This talk introduces Docker in a way...
-
-- Easy to understand
-- Easy to use
-- Functional
-- Able to solve problems
-- Just works
-
-Note:
-Goal: You'll be able to start using docker today,
-with little or no impact on daily work
 
 ====
 
@@ -175,10 +155,17 @@ Docker
 
 # Must be easier
 
-For me to start using it
+for me to start using it
 
 Note:
-In short, this is why
+This talk introduces Docker in a way...
+
+- Easy to use
+- Easy to understand
+- Able to solve problems
+
+Goal: You'll be able to start using docker today,
+with little or no impact on daily work
 
 ----
 
@@ -193,22 +180,6 @@ I promise that this is a brief introduction.
 
 ====
 
-## Docker
-
-> Build, Ship, and Run Any App, Anywhere
-
-&nbsp;
-
-- A plataform for working with software containers. <!-- .element: class="fragment" -->
-
-Note:
-The Docker ~~description~~ title on the main
-website.
-
-...and a free spech descrition.
-
-====
-
 ## Software container
 
 > Operating-system-level virtualization
@@ -216,12 +187,29 @@ website.
 &nbsp;
 
 - Virtualization without hardware emulation
+- Share the kernel with the host machine
 
 Note:
 a.k.a. Operating-system-level virtualization
 
 It is a virtualization technique
 that does not emulates hardware.
+
+====
+
+## Docker
+
+> Build, Ship, and Run Any App, Anywhere
+
+&nbsp;
+
+- A plataform for working with _software containers_.
+
+Note:
+The Docker ~~description~~ title on the main
+website.
+
+...and a free spech descrition.
 
 ====
 
@@ -281,15 +269,6 @@ environment.
 
 ====
 
-![docker-hub](img/docker-hub.jpg)
-
-https://hub.docker.com/
-
-Note:
-Docker Hub
-
-====
-
 ## Installation
 
 - GNU/Linux
@@ -334,14 +313,12 @@ VM, environment variables and etc.
 https://teespring.com/lifting-a-docker <!-- .element: class="credits" -->
 
 Note:
-It worked well enough, but with lack
+It works well enough, but with lack
 of performance and some other issues.
 
 ====
 
 ### Mac and Windows
-
-#### Now (still in beta)
 
 - Docker for Mac (`since 1.12-rc2`)
   + requires Yosemite `10.10`
@@ -354,6 +331,8 @@ Note:
 Recenty, with 1.12, Docker uses a native client
 and native Hypervisors.
 
+It's already considered stable version.
+
 ====
 
 ![docker-mac](img/docker-mac.jpg)
@@ -363,6 +342,15 @@ https://blog.docker.com/2016/03/docker-for-mac-windows-beta/ <!-- .element: clas
 Note:
 This improves docker under Mac and Windows
 a lot.
+
+====
+
+![docker-hub](img/docker-hub.jpg)
+
+https://hub.docker.com/
+
+Note:
+Docker Hub
 
 ----
 
@@ -383,6 +371,12 @@ Lets stick with the main topic now!
 - Redis for Sidekick Worker <!-- .element: class="fragment fade-up" -->
 - Elasticsearch for full-text searches <!-- .element: class="fragment fade-up" -->
 
+| &nbsp;
+| ---
+| &nbsp;
+| &nbsp;
+<!-- .element: style="visibility: hidden;" -->
+
 Note:
 Lets consider this potential, very common,
 appication.
@@ -393,9 +387,14 @@ appication.
 ### Potential application
 
 - Ruby on Rails app <!-- .element: class="red" -->
-- PostgreSQL Database <!-- .element: class="fragment highlight-blue" data-fragment-index="2" -->
-- Redis for Sidekick Worker <!-- .element: class="fragment highlight-blue" data-fragment-index="2" -->
-- Elasticsearch for full-text searches <!-- .element: class="fragment highlight-blue" data-fragment-index="2" -->
+- PostgreSQL Database
+- Redis for Sidekick Worker
+- Elasticsearch for full-text searches
+
+| &nbsp;
+| ---
+| Application code, business logic, etc. <!-- .element: class="red" -->
+| &nbsp; <!-- .element: class="hidden" -->
 
 Note:
 What is realy important for me when I'm developing?
@@ -405,12 +404,15 @@ What is realy important for me when I'm developing?
 
 ### Potential application
 
-- My code <!-- .element: class="red" -->
-  + Ruby on Rails app <!-- .element: class="red" -->
-- Volatile data <!-- .element: class="blue" -->
-  + PostgreSQL Database <!-- .element: class="blue" -->
-  + Redis for Sidekick Worker <!-- .element: class="blue" -->
-  + Elasticsearch for full-text searches <!-- .element: class="blue" -->
+- Ruby on Rails app <!-- .element: class="red" -->
+- PostgreSQL Database <!-- .element: class="blue" -->
+- Redis for Sidekick Worker <!-- .element: class="blue" -->
+- Elasticsearch for full-text searches <!-- .element: class="blue" -->
+
+| &nbsp;
+| ---
+| Application code, business logic, etc. <!-- .element: class="red" -->
+| Volatile data <!-- .element: class="blue" -->
 
 Note:
 The only layer I'm always working on is the
@@ -422,12 +424,15 @@ bother on configuring.
 
 ### Potential application
 
-- Host Machine <!-- .element: class="red" -->
-  + Ruby on Rails app <!-- .element: class="red" -->
-- Docker containers <!-- .element: class="blue" -->
-  + PostgreSQL Database <!-- .element: class="blue" -->
-  + Redis for Sidekick Worker <!-- .element: class="blue" -->
-  + Elasticsearch for full-text searches <!-- .element: class="blue" -->
+- Ruby on Rails app <!-- .element: class="red" -->
+- PostgreSQL Database <!-- .element: class="blue" -->
+- Redis for Sidekick Worker <!-- .element: class="blue" -->
+- Elasticsearch for full-text searches <!-- .element: class="blue" -->
+
+| &nbsp;
+| ---
+| On host machine <!-- .element: class="red" -->
+| On docker containers <!-- .element: class="blue" -->
 
 Note:
 So, I could have only the Rails app on my machine
@@ -460,7 +465,7 @@ to change/configure/edit frequently.
 - difficult to install
 - version restrictions
 - waste of system resources
-- waste of time
+- **waste of time**
 
 Note:
 Development dependencies are usually hard to install
@@ -514,18 +519,19 @@ Everything is set up using a YAML config file.
 
 ### Using Docker Compose
 
-```bash
-$ docker-compose up    # create/run containers
-$ docker-compose up -d # create/run containers in bg
-$ docker-compose start # start exiting containers
-$ docker-compose stop  # stop containers
-$ docker-compose rm -v # remove container
-$ docker-compose ps    # check containers
-$ docker-compose logs  # see output logs
-```
+- `docker-compose up`
+  + create/run containers <!-- .element: class="small" -->
+- `docker-compose start|stop`
+  + start or stop exiting containers <!-- .element: class="small" -->
+- `docker-compose rm`
+  + remove containers <!-- .element: class="small" -->
+- `docker-compose ps`
+  + check containers <!-- .element: class="small" -->
+- `docker-compose logs`
+  + read output logs <!-- .element: class="small" -->
 
 Note:
-...and controller by a small bunch of commands.
+...with small bunch of commands.
 
 ----
 
@@ -553,7 +559,7 @@ Running **only dependencies** on Docker
 
 Note:
 In this example, we'll ignore the app and
-just dealwith dependencies.
+just deal with dependencies.
 
 ====
 
@@ -585,14 +591,10 @@ Files at `./demos/databases`
 
 ====
 
-![beluga](img/oh-beluga.jpg)
+> That was fun. :)
 
-http://www.strangedangers.com/content/item/144262.html <!-- .element: class="credits" -->
-
-#### <b class="lowercase">Oh! 😮</b>
-
-Note:
-Beluga
+![fun](img/whale-fun.gif) <!-- .element: class="wide" -->
+http://giphy.com <!-- .element: class="credits" -->
 
 ----
 
@@ -635,14 +637,10 @@ Files at `./demos/static`
 
 ====
 
-![whale-shark](img/oh-whale-shark.jpg)
+> Yuppie! :D
 
-http://photos.echeng.com/Underwater/Whale-Sharks-Isla-Mujeres/i-cNPVx4z/A <!-- .element: class="credits" -->
-
-#### <b class="lowercase" style="font-size:1.2em">Ooh! 😮</b>
-
-Note:
-Whale shark
+![jump](img/whale-jump.gif) <!-- .element: class="stretch" -->
+http://giphy.com <!-- .element: class="credits" -->
 
 ----
 
@@ -690,14 +688,10 @@ Files at `./demos/express`
 
 ====
 
-![basking-shark](img/oh-basking-shark.jpg)
+> Easy, right? ;)
 
-https://www.emaze.com/@ACQFZLZO/Basking-Shark <!-- .element: class="credits" -->
-
-#### <b class="lowercase" style="font-size:1.4em">Ooh! 😮</b>
-
-Note:
-Basking Shark
+![yes](img/whale-yes.gif) <!-- .element: class="stretch" -->
+http://giphy.com <!-- .element: class="credits" -->
 
 ----
 
@@ -781,31 +775,26 @@ on port 8080 as before.
 
 ====
 
-![humpback-whale](img/oh-humpback-whale.jpg)
+> Amazing! :o
 
-http://io9.gizmodo.com/watch-these-humpback-whales-come-within-feet-of-gobblin-870896136 <!-- .element: class="credits" -->
-
-#### <b class="lowercase" style="font-size:1.6em">Ooh! 😮</b>
-
-Note:
-Humpback Whale
+![lol](img/whale_dolphin_-lol.gif)<!-- .element: class="stretch" -->
+http://giphy.com <!-- .element: class="credits" -->
 
 ----
 
 # Conclusion
 
-====
-
-By using Docker, software dependencies may be...
+With Docker, software dependencies may be...
 
 - Easy to setup and manage
 - Started with a single command
 - Always on correct versions
-- Distributable
+- and without touching the _Host_
 
 ====
 
-...and without touching the _Host_
+![kiss](img/whale-kiss.gif) <!-- .element: class="stretch" -->
+http://giphy.com <!-- .element: class="credits" -->
 
 ====
 

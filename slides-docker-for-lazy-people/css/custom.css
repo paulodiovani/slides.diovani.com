@@ -57,7 +57,28 @@ Image credits
 big text
  */
 .big {
-  font-size: 1.5em !important;
+  font-size: 1.4em !important;
+}
+
+/*
+small text
+ */
+.small {
+  font-size: .6em !important;
+}
+
+/*
+50% width
+ */
+.stretch {
+  width: 50%;
+}
+
+/*
+100% width
+ */
+.wide {
+  width: 100%;
 }
 
 /*
