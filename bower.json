@@ -32,10 +32,12 @@
     "slides-docker-for-lazy-people": "https://github.com/paulodiovani/slides-docker-for-lazy-people.git",
     "slides-nodejs-server-side-javascript": "https://github.com/paulodiovani/slides-nodejs-server-side-javascript.git",
     "slides-vagrant-lxc-docker": "https://github.com/paulodiovani/slides-vagrant-lxc-docker.git",
-    "slides-walking-on-rails": "https://github.com/paulodiovani/slides-walking-on-rails.git"
+    "slides-walking-on-rails": "https://github.com/paulodiovani/slides-walking-on-rails.git",
+    "slides-arduino-to-nodejs": "https://github.com/paulodiovani/slides-arduino-to-nodejs.git"
   },
   "group": {
     "slides": [
+      "slides-arduino-to-nodejs",
       "slides-docker-for-lazy-people",
       "slides-walking-on-rails",
       "slides-vagrant-lxc-docker",
