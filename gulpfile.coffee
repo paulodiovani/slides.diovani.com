@@ -11,7 +11,7 @@ gulp.task 'clean', ->
   del(['./dist/**/*'])
 
 gulp.task 'populate-slides', ['clean'], ->
-  gulp.src mainBowerFiles(group: 'slides'), base: './bower_components'
+  gulp.src mainBowerFiles(/slides-/, group: 'slides'), base: './bower_components'
     .pipe gulp.dest('./dist')
 
 gulp.task 'copy-index-files', ['clean'], ->
@@ -29,14 +29,8 @@ gulp.task 'update-index', ['clean'], (cb) ->
 
 gulp.task 'copy-dependencies', ['clean'], ->
   gulp.src [
-    'bower_components/bootstrap/dist/**/*.{css,js}'
-    'bower_components/bootstrap/dist/fonts/**/*'
-    'bower_components/font-awesome/**/*.{css,js}'
-    'bower_components/font-awesome/fonts/**/*'
-    'bower_components/headjs/**/*.js'
-    'bower_components/jquery/dist/**/*.js'
-    'bower_components/reveal.js/**/*.{css,js}'
-    'bower_components/reveal.js/lib/font/**/*'
+    'bower_components/**'
+    '!bower_components/slides-*/**/*'
   ], base: './'
     .pipe gulp.dest('./dist')
 
