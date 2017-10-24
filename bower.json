@@ -25,7 +25,7 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.6.3",
-    "jquery": "^2.2.4",
+    "jquery": "^3.2.1",
     "reveal.js": "^3.3.0",
     "slides-coffeescript": "https://github.com/paulodiovani/slides-coffeescript.git",
     "slides-continuous-integration-services": "https://github.com/paulodiovani/slides-continuous-integration-services.git",
