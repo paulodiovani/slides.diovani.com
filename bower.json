@@ -27,17 +27,23 @@
     "font-awesome": "^4.6.3",
     "jquery": "^3.2.1",
     "reveal.js": "^3.3.0",
+    "slides-arduino-to-nodejs": "https://github.com/paulodiovani/slides-arduino-to-nodejs.git",
     "slides-coffeescript": "https://github.com/paulodiovani/slides-coffeescript.git",
     "slides-continuous-integration-services": "https://github.com/paulodiovani/slides-continuous-integration-services.git",
     "slides-docker-for-lazy-people": "https://github.com/paulodiovani/slides-docker-for-lazy-people.git",
+    "slides-flatenning-js-modules": "https://github.com/paulodiovani/slides-flatenning-js-modules.git",
     "slides-nodejs-server-side-javascript": "https://github.com/paulodiovani/slides-nodejs-server-side-javascript.git",
+    "slides-systemd-nspawn": "https://github.com/paulodiovani/slides-systemd-nspawn.git",
+    "slides-the-power-of-node-streams": "https://github.com/paulodiovani/slides-the-power-of-node-streams.git",
     "slides-vagrant-lxc-docker": "https://github.com/paulodiovani/slides-vagrant-lxc-docker.git",
     "slides-walking-on-rails": "https://github.com/paulodiovani/slides-walking-on-rails.git",
-    "slides-arduino-to-nodejs": "https://github.com/paulodiovani/slides-arduino-to-nodejs.git",
-    "slides-flatenning-js-modules": "https://github.com/paulodiovani/slides-flatenning-js-modules.git"
+    "slides-working-abroad": "https://github.com/paulodiovani/slides-working-abroad.git"
   },
   "group": {
     "slides": [
+      "slides-working-abroad",
+      "slides-systemd-nspawn",
+      "slides-the-power-of-node-streams",
       "slides-flatenning-js-modules",
       "slides-arduino-to-nodejs",
       "slides-docker-for-lazy-people",
