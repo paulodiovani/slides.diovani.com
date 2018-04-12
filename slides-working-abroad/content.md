@@ -2,7 +2,7 @@
 
 _My first time working in the USA._
 
-<small>Version 0.1.0</small>
+<small>Version 0.1.2</small>
 
 <small>by Paulo Diovani</small>
 
@@ -161,7 +161,7 @@ Lots of fun!
 
 - Being polite
 
-- Tem diversity
+- Team diversity
 
     You will easily be working with people
     from all around the globe.
