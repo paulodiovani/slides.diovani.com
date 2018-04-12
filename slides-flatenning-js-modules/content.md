@@ -580,22 +580,30 @@ Not sure how to use with Ramda or
 other lib. Maybe on next versions.
 
 ----
-<!-- .slide: id="concusions" class="bigtext" -->
 
-Conclusions
+## Conclusions
 
-Functional Javascript is not a replacement
+- Functional Javascript is not a replacement paradigm
 
-Use it to improve/refactor code
+- Can live alongside Object Oriented Programming
 
-Adapt to your needs
+- Use to improve/refactor code and
+
+- Adapt to your needs
 
 Note:
-Don't look fp as new paradigm to replace other
+Learn some concepts that fits your needs
 
 ====
 
-### Bibliografy
+## Libraries
+
+- [`Ramda` ramdajs.com](http://ramdajs.com/)
+- [`Lodash` lodash.com](https://lodash.com/)
+    + [lodash/lodash/wiki/FP-Guide](https://github.com/lodash/lodash/wiki/FP-Guide)
+====
+
+### Bibliography
 
 - [blog.codeminer42.com](https://blog.codeminer42.com/introduction-to-functional-programming-with-javascript-c06a2540a7c3)
 - [blog.diovani.com](http://blog.diovani.com/technology/2017/02/11/flattening-javascript-modules.html)
