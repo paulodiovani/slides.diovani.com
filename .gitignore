@@ -35,3 +35,7 @@ bower_components
 
 # Build output
 dist
+
+# Lock file
+npm-shrinkwrap.json
+package-lock.json

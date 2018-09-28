@@ -5,15 +5,15 @@ Website for all the talks I've made. http://slides.diovani.com
 ## Run local
 
 ```console
-npm install
-npm start
+yarn install
+yarn start
 ```
 
 ## Deploy to GitHub pages
 
 ```console
-npm install
-npm run deploy
+yarn install
+yarn deploy
 ```
 
 ## Licensing
