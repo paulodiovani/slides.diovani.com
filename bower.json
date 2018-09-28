@@ -37,10 +37,12 @@
     "slides-the-power-of-node-streams": "https://github.com/paulodiovani/slides-the-power-of-node-streams.git",
     "slides-vagrant-lxc-docker": "https://github.com/paulodiovani/slides-vagrant-lxc-docker.git",
     "slides-walking-on-rails": "https://github.com/paulodiovani/slides-walking-on-rails.git",
-    "slides-working-abroad": "https://github.com/paulodiovani/slides-working-abroad.git"
+    "slides-working-abroad": "https://github.com/paulodiovani/slides-working-abroad.git",
+    "slides-fp-baby-steps-with-javscript": "https://github.com/paulodiovani/slides-fp-baby-steps-with-javscript.git"
   },
   "group": {
     "slides": [
+      "slides-fp-baby-steps-with-javscript",
       "slides-working-abroad",
       "slides-systemd-nspawn",
       "slides-the-power-of-node-streams",
