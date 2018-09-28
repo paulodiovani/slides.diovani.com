@@ -14,20 +14,9 @@
   background: none !important;
 }
 
-.reveal img.full-width,
-.reveal a.full-width img {
-  width: 100%;
-}
-
 .reveal img.half-width,
 .reveal a.half-width img {
   width: 50%;
-}
-
-.reveal img.img-half-right {
-  float: right;
-  width: 30%;
-  height: auto;
 }
 
 .reveal ul ul {
@@ -53,46 +42,8 @@ and increase font size
   max-height: none;
 }
 
-.reveal pre.half-pre {
-  float: left;
-  width: calc(50% - 2.6em);
-  margin-right: 1em;
-}
-
-.reveal pre.half-pre + pre {
-  float: right;
-  width: calc(50% - 2.6em);
-}
-
-.reveal pre.half-pre + pre + * {
-  clear: both;
-}
-
-.reveal .references ul {
-  width: 90%;
-}
-
 .reveal .references ul > li {
-  font-size: .8em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/*
-Image credits
- */
-.credits {
-  font-size: .4em !important;
-  font-style: italic !important;
-  display: block;
-}
-
-.credits::before {
-  content: "Image credits:";
-  font-size: .8em !important;
-  text-transform: uppercase;
-  padding-right: .4em;
+  font-size: .7em;
 }
 
 /*
@@ -103,66 +54,8 @@ bigtext.js
   text-shadow: 2px 2px 1px #ddd;
 }
 
-/*
-small text
- */
-.small {
-  font-size: .6em !important;
-}
-
 .align-center {
   text-align: center !important;
-}
-
-/*
-50% width
- */
-.half {
-  width: 50%;
-}
-
-/*
-100% width
- */
-.wide {
-  width: 100%;
-}
-
-/*
-colors
- */
-.red { color: #ff2c2d; }
-.blue { color: #1b91ff; }
-
-/*
-Truncate text/links
- */
-.more {
-  display: inline-block;
-  width: 80%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-
-/*
-Force lowercase (used for titles)
- */
-.lowercase {
-  font-weight: normal !important;
-  text-transform: lowercase;
-}
-
-/*
-Add a bg to text, like a stamp
-*/
-.reveal .stamp h1,
-.reveal .stamp h2,
-.reveal .stamp h3,
-.reveal .stamp small {
-  background-color: rgba(255, 255, 255, .6);
-  border-radius: .1em;
 }
 
 /*
@@ -170,10 +63,4 @@ Fix <small>
 */
 .reveal small {
   vertical-align: middle;
-}
-
-.reveal ul.tag-list li {
-  list-style-type: none;
-  float: left;
-  padding: 20px;
 }

@@ -2,7 +2,7 @@
 
 ## Functional Programming<br>baby steps<br>with JavaScript
 
-<small>Version 0.1.0</small>
+<small>Version 0.1.1</small>
 
 <small>by Paulo Diovani</small>
 
@@ -13,6 +13,15 @@ exemplos de utilização em JavaScript que possam ajudar a
 escrever códigos melhores.
 
 - Quem já programa ou conhece FP?
+
+====
+
+### 👾 Emoji Alert! 🤯
+
+These presentation slides use some emoji in several examples. For a better
+experience an emoji font is required.
+
+I suggest installing [EMOJIone](https://www.emojione.com/).
 
 ----
 <!-- .slide: data-background="img/functional-programming-word-cloud.png" data-background-size="contain" -->
@@ -553,7 +562,7 @@ Por fim, a maior dica aqui é:
 
 - Aprendam uma linguagem FP que só isso já vai ajudar a resolver
   problemas de maneiras diferentes.
-  
+
 ----
 <!-- .slide: class="references" -->
 
